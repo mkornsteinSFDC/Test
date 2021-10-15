@@ -2,18 +2,16 @@
 <body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: purple;
+		background-color: #005290;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
 	}
-	.flowText {color:red; background-color:green;} 
-		
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/jahttps://gist.github.com/chrisvfritz/bc010e6ed25b802da7ebvascript'>
+<script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
@@ -30,11 +28,11 @@
 		embedded_svc.settings.entryFeature = 'Flows';
 
 		embedded_svc.init(
-			'https://morinsys-dev-ed.my.salesforce.com',
-			'https://morinsys002-developer-edition.na163.force.com/test',
+			'https://reedelsevierinc3--dev.my.salesforce.com',
+			'https://dev-lnrsgconsumerrequestsb.cs110.force.com',
 			gslbBaseURL,
-			'00D5f000002b3kI',
-			'Test_MRK',
+			'00D0C0000008f1Z',
+			'W2C_Demo',
 			{
 				
 			}
@@ -43,7 +41,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://morinsys-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://reedelsevierinc3--dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
